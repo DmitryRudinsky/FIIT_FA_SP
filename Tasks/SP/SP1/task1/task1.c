@@ -8,6 +8,7 @@
 #define MAX_USERS 100
 #define MAX_LOGIN_LEN 6
 #define MAX_COMMAND_LEN 100
+#define MAX_INPUT_LEN 256
 #define ADMIN_PIN 12345
 
 typedef struct {
@@ -60,13 +61,22 @@ bool validate_pin(int pin) {
 void register_user() {
     char login[MAX_LOGIN_LEN + 1];
     int pin;
-    char line[256];
+    char line[MAX_INPUT_LEN];
 
     printf("Регистрация нового пользователя\n");
 
     while (1) {
         printf("Введите логин (макс. %d символов, буквы и цифры): ", MAX_LOGIN_LEN);
-        fgets(line, sizeof(line), stdin);
+        if (fgets(line, sizeof(line), stdin) == NULL) {
+            continue;
+        }
+
+        if (strlen(line) >= MAX_INPUT_LEN - 1 && line[MAX_INPUT_LEN - 2] != '\n') {
+            printf("Слишком длинный ввод. Максимум %d символов.\n", MAX_INPUT_LEN - 2);
+            while (getchar() != '\n');
+            continue;
+        }
+
         line[strcspn(line, "\n")] = '\0';
 
         if (!validate_login(line)) {
@@ -86,7 +96,15 @@ void register_user() {
 
     while (1) {
         printf("Введите PIN-код (0-100000): ");
-        fgets(line, sizeof(line), stdin);
+        if (fgets(line, sizeof(line), stdin) == NULL) {
+            continue;
+        }
+
+        if (strlen(line) >= MAX_INPUT_LEN - 1 && line[MAX_INPUT_LEN - 2] != '\n') {
+            printf("Слишком длинный ввод. Максимум %d символов.\n", MAX_INPUT_LEN - 2);
+            while (getchar() != '\n');
+            continue;
+        }
 
         if (sscanf(line, "%d", &pin) != 1 || !validate_pin(pin)) {
             printf("Недопустимый PIN-код. Попробуйте еще раз.\n");
@@ -130,13 +148,23 @@ void logout() {
 
 void set_sanctions(const char *username, int limit) {
     int confirm;
+    char line[MAX_INPUT_LEN];
+
     printf("Для подтверждения введите 12345: ");
-    if (scanf("%d", &confirm) != 1 || confirm != ADMIN_PIN) {
-        printf("Неверный код подтверждения.\n");
+    if (fgets(line, sizeof(line), stdin) == NULL) {
+        return;
+    }
+
+    if (strlen(line) >= MAX_INPUT_LEN - 1 && line[MAX_INPUT_LEN - 2] != '\n') {
+        printf("Слишком длинный ввод. Максимум %d символов.\n", MAX_INPUT_LEN - 2);
         while (getchar() != '\n');
         return;
     }
-    while (getchar() != '\n');
+
+    if (sscanf(line, "%d", &confirm) != 1 || confirm != ADMIN_PIN) {
+        printf("Неверный код подтверждения.\n");
+        return;
+    }
 
     User *user = find_user(username);
     if (user == NULL) {
@@ -153,16 +181,34 @@ void set_sanctions(const char *username, int limit) {
 bool login_user() {
     char login[MAX_LOGIN_LEN + 1];
     int pin;
-    char line[256];
+    char line[MAX_INPUT_LEN];
 
     printf("Авторизация пользователя\n");
     printf("Введите логин: ");
-    fgets(line, sizeof(line), stdin);
+    if (fgets(line, sizeof(line), stdin) == NULL) {
+        return false;
+    }
+
+    if (strlen(line) >= MAX_INPUT_LEN - 1 && line[MAX_INPUT_LEN - 2] != '\n') {
+        printf("Слишком длинный ввод. Максимум %d символов.\n", MAX_INPUT_LEN - 2);
+        while (getchar() != '\n');
+        return false;
+    }
+
     line[strcspn(line, "\n")] = '\0';
     strncpy(login, line, MAX_LOGIN_LEN);
 
     printf("Введите PIN-код: ");
-    fgets(line, sizeof(line), stdin);
+    if (fgets(line, sizeof(line), stdin) == NULL) {
+        return false;
+    }
+
+    if (strlen(line) >= MAX_INPUT_LEN - 1 && line[MAX_INPUT_LEN - 2] != '\n') {
+        printf("Слишком длинный ввод. Максимум %d символов.\n", MAX_INPUT_LEN - 2);
+        while (getchar() != '\n');
+        return false;
+    }
+
     sscanf(line, "%d", &pin);
 
     User *user = find_user(login);
@@ -179,10 +225,16 @@ bool login_user() {
 }
 
 void process_command() {
-    char line[MAX_COMMAND_LEN];
+    char line[MAX_INPUT_LEN];
 
     printf("%s> ", current_user->login);
     if (fgets(line, sizeof(line), stdin) == NULL) {
+        return;
+    }
+
+    if (strlen(line) >= MAX_INPUT_LEN - 1 && line[MAX_INPUT_LEN - 2] != '\n') {
+        printf("Слишком длинная команда. Максимум %d символов.\n", MAX_INPUT_LEN - 2);
+        while (getchar() != '\n');
         return;
     }
 
@@ -240,7 +292,7 @@ void process_command() {
 
 void show_auth_menu() {
     int choice;
-    char line[256];
+    char line[MAX_INPUT_LEN];
 
     while (1) {
         printf("\nМеню авторизации\n");
@@ -249,7 +301,16 @@ void show_auth_menu() {
         printf("3. Выход\n");
         printf("Выберите действие: ");
 
-        fgets(line, sizeof(line), stdin);
+        if (fgets(line, sizeof(line), stdin) == NULL) {
+            continue;
+        }
+
+        if (strlen(line) >= MAX_INPUT_LEN - 1 && line[MAX_INPUT_LEN - 2] != '\n') {
+            printf("Слишком длинный ввод. Максимум %d символов.\n", MAX_INPUT_LEN - 2);
+            while (getchar() != '\n');
+            continue;
+        }
+
         if (sscanf(line, "%d", &choice) != 1) {
             continue;
         }

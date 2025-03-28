@@ -1,0 +1,1 @@
+leaks -atExit -- ./task2 ~/Desktop/fish/fish.txt ~/Desktop/fish/fish1/fish.txt ~/Desktop/fish/fish1/fish2/fish.txt  ~/Desktop/fish/fish1/fish2/fish3/fish.txt 

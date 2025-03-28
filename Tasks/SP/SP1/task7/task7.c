@@ -112,7 +112,6 @@ int list_directory(const char *path) {
 
 int main(int argc, char *argv[]) {
     if (argc < 2) {
-        // Если аргументы не переданы, используем текущий каталог
         return list_directory(".");
     }
     

@@ -31,7 +31,6 @@ void create_copies_dir() {
     }
 }
 
-// Проверка hex-строки
 int validate_hex(const char *hex) {
     if (!hex) return 0;
 
@@ -91,11 +90,11 @@ void process_xorN(const char *filename, int n) {
 
     size_t block_size;
     switch(n) {
-        case 2: block_size = 1; break;   // 2^2 бит = 4 бита (0.5 байта), берем 1 байт
-        case 3: block_size = 1; break;   // 2^3 бит = 1 байт
-        case 4: block_size = 2; break;   // 2^4 бит = 2 байта
-        case 5: block_size = 4; break;   // 2^5 бит = 4 байта
-        case 6: block_size = 8; break;   // 2^6 бит = 8 байт
+        case 2: block_size = 1; break;
+        case 3: block_size = 1; break;
+        case 4: block_size = 2; break;
+        case 5: block_size = 4; break;
+        case 6: block_size = 8; break;
         default: return;
     }
 
@@ -146,7 +145,6 @@ void process_xorN(const char *filename, int n) {
     }
 }
 
-// Операция mask
 void process_mask(const char *filename, uint32_t mask) {
     if (!filename) {
         LOG_ERROR("Invalid arguments");
@@ -178,7 +176,6 @@ void process_mask(const char *filename, uint32_t mask) {
     }
 }
 
-// Операция copyN
 void process_copyN(const char *filename, int n) {
     if (!filename || n <= 0 || n > MAX_COPIES) {
         LOG_ERROR("Invalid arguments");
@@ -302,7 +299,6 @@ void process_copyN(const char *filename, int n) {
     free(pids);
 }
 
-// Поиск подстроки
 int find_substring(const char *buffer, size_t buf_len,
                   const char *pattern, size_t pat_len) {
     if (pat_len == 0) return 1;
@@ -316,7 +312,6 @@ int find_substring(const char *buffer, size_t buf_len,
     return 0;
 }
 
-// Операция find
 void process_find(const char *filename, const char *search_str) {
     if (!filename || !search_str) {
         LOG_ERROR("Invalid arguments");
@@ -335,41 +330,45 @@ void process_find(const char *filename, const char *search_str) {
     }
 
     if (!file_exists(filename)) {
-        LOG_ERROR("File does not exist: %s", filename);
+        printf("File not found: %s\n", filename);
         return;
     }
 
-    FILE *file = fopen(filename, "rb");
-    if (!file) {
-        LOG_ERROR("Failed to open %s: %s", filename, strerror(errno));
+    pid_t pid = fork();
+    if (pid == -1) {
+        LOG_ERROR("fork failed: %s", strerror(errno));
         return;
     }
 
-    fseek(file, 0, SEEK_END);
-    long file_size = ftell(file);
-    fseek(file, 0, SEEK_SET);
+    if (pid == 0) {
+        FILE *file = fopen(filename, "rb");
+        if (!file) {
+            LOG_ERROR("Failed to open %s: %s", filename, strerror(errno));
+            exit(EXIT_FAILURE);
+        }
 
-    if (file_size > MAX_FILE_SIZE) {
-        LOG_ERROR("File too large: %s", filename);
+        char buffer[4096];
+        size_t bytes_read;
+        int found = 0;
+
+        while (!found && (bytes_read = fread(buffer, 1, sizeof(buffer), file)) ){
+            if (memmem(buffer, bytes_read, search_str, search_len) != NULL) {
+                found = 1;
+            }
+        }
+
         fclose(file);
-        return;
+        exit(found ? EXIT_SUCCESS : EXIT_FAILURE);
+    } else {
+        int status;
+        waitpid(pid, &status, 0);
+
+        if (WIFEXITED(status)) {
+            if (WEXITSTATUS(status) == EXIT_SUCCESS) {
+                printf("%s\n", filename);
+            }
+        }
     }
-
-    char *buffer = malloc(file_size);
-    if (!buffer) {
-        LOG_ERROR("Memory allocation failed");
-        fclose(file);
-        return;
-    }
-
-    size_t bytes_read = fread(buffer, 1, file_size, file);
-    fclose(file);
-
-    if (find_substring(buffer, bytes_read, search_str, search_len)) {
-        printf("Found in: %s\n", filename);
-    }
-
-    free(buffer);
 }
 
 int main(int argc, char *argv[]) {
@@ -383,7 +382,6 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    // Определение команды
     int cmd_index = -1;
     enum { MODE_XORN, MODE_MASK, MODE_COPYN, MODE_FIND } mode;
     int n = 0;
@@ -441,7 +439,6 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    // Проверка существования файлов
     for (int i = 1; i < cmd_index; i++) {
         if (!file_exists(argv[i])) {
             LOG_ERROR("File does not exist: %s", argv[i]);

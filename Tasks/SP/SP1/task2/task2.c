@@ -10,6 +10,7 @@
 #include <ctype.h>
 #include <stdint.h>
 #include <errno.h>
+#include <stdbool.h>
 
 #define MAX_FILENAME_LEN 1024
 #define MAX_PATH_LEN 4096
@@ -43,7 +44,6 @@ int validate_hex(const char *hex) {
     return 1;
 }
 
-// Парсинг hex-строки
 uint32_t parse_hex(const char *hex) {
     uint32_t mask;
     if (sscanf(hex, "%x", &mask) != 1) {
@@ -82,67 +82,94 @@ void make_copy_path(char* dest, const char* src_path, int copy_num) {
     snprintf(dest, MAX_PATH_LEN, "%s/%s_%d", COPIES_DIR, filename, copy_num);
 }
 
-void process_xorN(const char *filename, int n) {
-    if (!filename || n < 2 || n > 6) {
+void process_xorN(const char *filename, int N) {
+    if (!filename || N < 2 || N > 6) {
         LOG_ERROR("Invalid arguments");
         return;
     }
 
-    size_t block_size;
-    switch(n) {
-        case 2: block_size = 1; break;
-        case 3: block_size = 1; break;
-        case 4: block_size = 2; break;
-        case 5: block_size = 4; break;
-        case 6: block_size = 8; break;
-        default: return;
-    }
+    const size_t bits_per_block = (1 << N);
+    const size_t bytes_per_block = (N >= 3) ? (bits_per_block / 8) : 0;
+    const size_t bits_in_byte = 8;
+    size_t result_size = (N >= 3) ? bytes_per_block : 1;
 
-    FILE *file = NULL;
-    uint8_t *block = NULL;
-    uint8_t *result = NULL;
-
-    file = fopen(filename, "rb");
+    FILE *file = fopen(filename, "rb");
     if (!file) {
         LOG_ERROR("Failed to open %s: %s", filename, strerror(errno));
         return;
     }
 
-    block = malloc(block_size);
-    result = malloc(block_size);
-    if (!block || !result) {
-        LOG_ERROR("Memory allocation failed for block size %zu bytes", block_size);
-        goto cleanup;
-    }
-    memset(result, 0, block_size);
-
-    size_t bytes_read;
-    while ((bytes_read = fread(block, 1, block_size, file))) {
-        if (bytes_read < block_size) {
-            memset(block + bytes_read, 0, block_size - bytes_read);
-        }
-
-        for (size_t i = 0; i < block_size; i++) {
-            result[i] ^= block[i];
-        }
+    uint8_t *result = calloc(result_size, sizeof(uint8_t));
+    if (!result) {
+        LOG_ERROR("Memory allocation failed");
+        fclose(file);
+        return;
     }
 
-    if (ferror(file)) {
-        LOG_ERROR("Error reading file %s", filename);
+    if (N >= 3) {
+        uint8_t *block = malloc(bytes_per_block);
+        if (!block) {
+            LOG_ERROR("Memory allocation failed");
+            free(result);
+            fclose(file);
+            return;
+        }
+
+        while (1) {
+            size_t bytes_read = fread(block, 1, bytes_per_block, file);
+            if (bytes_read == 0) {
+                if (feof(file)) break;
+                LOG_ERROR("Error reading file %s", filename);
+                free(result);
+                free(block);
+                fclose(file);
+                return;
+            }
+
+            if (bytes_read < bytes_per_block) {
+                memset(block + bytes_read, 0, bytes_per_block - bytes_read);
+            }
+
+            for (size_t i = 0; i < bytes_per_block; i++) {
+                result[i] ^= block[i];
+            }
+        }
+
+        free(block);
     } else {
-        printf("%s XOR%d result (hex): ", filename, n);
-        for (size_t i = 0; i < block_size; i++) {
-            printf("%02X", result[i]);
+        uint8_t current_byte;
+        uint8_t bit_buffer = 0;
+        size_t bit_counter = 0;
+
+        while (fread(&current_byte, 1, 1, file) == 1) {
+            for (int i = bits_in_byte - 1; i >= 0; i--) {
+                uint8_t bit = (current_byte >> i) & 1;
+                bit_buffer = (bit_buffer << 1) | bit;
+                bit_counter++;
+
+                if (bit_counter == bits_per_block) {
+                    result[0] ^= bit_buffer;
+                    bit_buffer = 0;
+                    bit_counter = 0;
+                }
+            }
         }
-        printf("\n");
+
+        if (bit_counter > 0) {
+            bit_buffer <<= (bits_per_block - bit_counter);
+            result[0] ^= bit_buffer;
+        }
     }
 
-    cleanup:
-        if (block) free(block);
-        if (result) free(result);
-        if (file && fclose(file) != 0) {
-        LOG_ERROR("Failed to close file %s: %s", filename, strerror(errno));
+    fclose(file);
+
+    printf("%s XOR%d result (hex): ", filename, N);
+    for (size_t i = 0; i < result_size; i++) {
+        printf("%02X", result[i]);
     }
+    printf("\n");
+
+    free(result);
 }
 
 void process_mask(const char *filename, uint32_t mask) {
@@ -347,16 +374,42 @@ void process_find(const char *filename, const char *search_str) {
             exit(EXIT_FAILURE);
         }
 
-        char buffer[4096];
-        size_t bytes_read;
+        size_t overlap = search_len - 1;
+        char *overlap_buffer = malloc(overlap + 4096);
+        if (!overlap_buffer) {
+            LOG_ERROR("Memory allocation failed");
+            fclose(file);
+            exit(EXIT_FAILURE);
+        }
+
+        size_t overlap_count = 0;
         int found = 0;
 
-        while (!found && (bytes_read = fread(buffer, 1, sizeof(buffer), file)) ){
-            if (memmem(buffer, bytes_read, search_str, search_len) != NULL) {
-                found = 1;
+        while (!found) {
+            size_t bytes_read = fread(overlap_buffer + overlap_count, 1, 4096, file);
+            if (bytes_read == 0) {
+                break;
+            }
+
+            size_t total_bytes = overlap_count + bytes_read;
+
+            if (total_bytes >= search_len) {
+                if (memmem(overlap_buffer, total_bytes, search_str, search_len) != NULL) {
+                    found = 1;
+                    break;
+                }
+            }
+
+            if (overlap > 0) {
+                size_t keep = (total_bytes >= overlap) ? overlap : total_bytes;
+                memmove(overlap_buffer, overlap_buffer + total_bytes - keep, keep);
+                overlap_count = keep;
+            } else {
+                overlap_count = 0;
             }
         }
 
+        free(overlap_buffer);
         fclose(file);
         exit(found ? EXIT_SUCCESS : EXIT_FAILURE);
     } else {

@@ -1,0 +1,28 @@
+{
+  "log": {
+    "format": "[%d %t][%s] %m",
+    "severities": {
+      "trace": {
+        "files": ["trace.log"],
+        "console": true
+      },
+      "debug": {
+        "files": ["debug.log"]
+      },
+      "info": {
+        "console": true
+      },
+      "warning": {
+        "files": ["warning.log", "errors.log"],
+        "console": true
+      },
+      "error": {
+        "files": ["errors.log"]
+      },
+      "critical": {
+        "files": ["critical.log"],
+        "console": true
+      }
+    }
+  }
+}

@@ -99,7 +99,7 @@ void process_xorN(const char *filename, int N) {
         return;
     }
 
-    uint8_t *result = calloc(result_size, sizeof(uint8_t));
+    uint8_t *result = (uint8_t *)calloc(result_size, sizeof(uint8_t));
     if (!result) {
         LOG_ERROR("Memory allocation failed");
         fclose(file);
@@ -107,7 +107,7 @@ void process_xorN(const char *filename, int N) {
     }
 
     if (N >= 3) {
-        uint8_t *block = malloc(bytes_per_block);
+        uint8_t *block = (uint8_t *)malloc(bytes_per_block);
         if (!block) {
             LOG_ERROR("Memory allocation failed");
             free(result);
@@ -226,7 +226,7 @@ void process_copyN(const char *filename, int n) {
 
     create_copies_dir();
 
-    pid_t *pids = malloc(n * sizeof(pid_t));
+    pid_t *pids = (pid_t *)malloc(n * sizeof(pid_t));
     if (!pids) {
         LOG_ERROR("Memory allocation failed");
         return;
@@ -375,7 +375,7 @@ void process_find(const char *filename, const char *search_str) {
         }
 
         size_t overlap = search_len - 1;
-        char *overlap_buffer = malloc(overlap + 4096);
+        char *overlap_buffer = (char *)malloc(overlap + 4096);
         if (!overlap_buffer) {
             LOG_ERROR("Memory allocation failed");
             fclose(file);

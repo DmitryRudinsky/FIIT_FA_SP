@@ -1,0 +1,13 @@
+{
+  "log": {
+    "format": "[%d %t][%s] %m",
+    "trace": {
+      "console": true,
+      "files": ["a.txt", "b.txt"]
+    },
+    "debug": {
+      "console": false,
+      "files": ["../tests/a.txt"]
+    }
+  }
+}

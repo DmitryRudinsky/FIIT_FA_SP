@@ -4,7 +4,7 @@
 
 #ifdef _WIN32
 #include <process.h>
-#elif
+#else
 #include <unistd.h>
 #endif
 
@@ -30,7 +30,7 @@ int server_logger::inner_getpid()
 {
 #ifdef _WIN32
     return ::_getpid();
-#elif
+#else
     return getpid();
 #endif
 }

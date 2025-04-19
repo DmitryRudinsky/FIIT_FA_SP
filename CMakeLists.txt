@@ -22,7 +22,11 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(nlohmann_json)
 
+set(BOOST_INCLUDEDIR "${BOOST_ROOT}/include")
+set(BOOST_LIBRARYDIR "${BOOST_ROOT}/lib")
+
 find_package(Boost COMPONENTS system container REQUIRED) # Ставить через vcpkg
+find_package(httplib CONFIG REQUIRED)
 
 add_subdirectory(allocator)
 add_subdirectory(arithmetic)

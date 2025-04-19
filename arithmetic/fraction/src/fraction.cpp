@@ -1,137 +1,245 @@
 #include "../include/fraction.h"
+#include <stdexcept>
+#include <cmath>
 
-void fraction::optimise()
-{
-    throw not_implemented("void fraction::optimise()", "your code should be here...");
+fraction fraction::operator-() const {
+    return fraction(-_numerator, _denominator);
+}
+
+void fraction::optimise() {
+    if (_denominator == big_int(0)) {
+        throw std::invalid_argument("Denominator cannot be zero.");
+    }
+
+    if (_denominator < big_int(0)) {
+        _numerator = _numerator.operator-();
+        _denominator = _denominator.operator-();
+    }
+
+    big_int a = _numerator.abs();
+    big_int b = _denominator.abs();
+    while (b != big_int(0)) {
+        big_int temp = b;
+        b = a % b;
+        a = temp;
+    }
+    big_int gcd = a;
+
+    if (gcd != big_int(0)) {
+        _numerator /= gcd;
+        _denominator /= gcd;
+    }
 }
 
 template<std::convertible_to<big_int> f, std::convertible_to<big_int> s>
-fraction::fraction(f &&numerator, s &&denominator)
-{
-    throw not_implemented("template<std::convertible_to<big_int> f, std::convertible_to<big_int> s> fraction::fraction(f &&, s &&)", "your code should be here...");
+fraction::fraction(f&& numerator, s&& denominator)
+    : _numerator(std::forward<f>(numerator)), _denominator(std::forward<s>(denominator)) {
+    optimise();
 }
 
-fraction::fraction(pp_allocator<big_int::value_type>)
-{
-    throw not_implemented("fraction::fraction(pp_allocator<big_int::value_type>)", "your code should be here...");
+fraction::fraction(pp_allocator<big_int::value_type> alloc)
+    : _numerator(0, alloc), _denominator(1, alloc) {}
+
+fraction fraction::abs() const {
+    return fraction(_numerator.abs(), _denominator.abs());
 }
 
-fraction &fraction::operator+=(fraction const &other) &
-{
-    throw not_implemented("fraction &fraction::operator+=(fraction const &) &", "your code should be here...");
+fraction& fraction::operator+=(const fraction& other) & {
+    _numerator = _numerator * other._denominator + other._numerator * _denominator;
+    _denominator *= other._denominator;
+    optimise();
+    return *this;
 }
 
-fraction fraction::operator+(fraction const &other) const
-{
-    throw not_implemented("fraction fraction::operator+(fraction const &) const", "your code should be here...");
+fraction fraction::operator+(const fraction& other) const {
+    fraction result(*this);
+    result += other;
+    return result;
 }
 
-fraction &fraction::operator-=(fraction const &other) &
-{
-    throw not_implemented("fraction &fraction::operator-=(fraction const &) &", "your code should be here...");
+fraction& fraction::operator-=(const fraction& other) & {
+    _numerator = _numerator * other._denominator - other._numerator * _denominator;
+    _denominator *= other._denominator;
+    optimise();
+    return *this;
 }
 
-fraction fraction::operator-(fraction const &other) const
-{
-    throw not_implemented("fraction fraction::operator-(fraction const &) const", "your code should be here...");
+fraction fraction::operator-(const fraction& other) const {
+    fraction result(*this);
+    result -= other;
+    return result;
 }
 
-fraction &fraction::operator*=(fraction const &other) &
-{
-    throw not_implemented("fraction &fraction::operator*=(fraction const &) &", "your code should be here...");
+fraction& fraction::operator*=(const fraction& other) & {
+    _numerator *= other._numerator;
+    _denominator *= other._denominator;
+    optimise();
+    return *this;
 }
 
-fraction fraction::operator*(fraction const &other) const
-{
-    throw not_implemented("fraction fraction::operator*(fraction const &) const", "your code should be here...");
+fraction fraction::operator*(const fraction& other) const {
+    fraction result(*this);
+    result *= other;
+    return result;
 }
 
-fraction &fraction::operator/=(fraction const &other) &
-{
-    throw not_implemented("fraction &fraction::operator/=(fraction const &) &", "your code should be here...");
+fraction& fraction::operator/=(const fraction& other) & {
+    if (other._numerator == big_int(0)) {
+        throw std::invalid_argument("Division by zero");
+    }
+    _numerator *= other._denominator;
+    _denominator *= other._numerator;
+    optimise();
+    return *this;
 }
 
-fraction fraction::operator/(fraction const &other) const
-{
-    throw not_implemented("fraction fraction::operator/(fraction const &) const", "your code should be here...");
+fraction fraction::operator/(const fraction& other) const {
+    fraction result(*this);
+    result /= other;
+    return result;
 }
 
-bool fraction::operator==(fraction const &other) const noexcept
-{
-    throw not_implemented("bool fraction::operator==(fraction const &) const noexcept", "your code should be here...");
+bool fraction::operator==(const fraction& other) const noexcept {
+    return (_numerator * other._denominator) == (other._numerator * _denominator);
 }
 
-std::partial_ordering fraction::operator<=>(const fraction& other) const noexcept
-{
-    throw not_implemented("std::partial_ordering fraction::operator<=>(const fraction& ) const noexcept", "your code should be here...");
+std::partial_ordering fraction::operator<=>(const fraction& other) const noexcept {
+    big_int lhs = _numerator * other._denominator;
+    big_int rhs = other._numerator * _denominator;
+    return lhs <=> rhs;
 }
 
-std::ostream &operator<<(std::ostream &stream, fraction const &obj)
-{
-    throw not_implemented("std::ostream &operator<<(std::ostream &, fraction const &)", "your code should be here...");
+bool fraction::operator>=(const fraction& other) const {
+    return (*this > other) || (*this == other);
 }
 
-std::istream &operator>>(std::istream &stream, fraction &obj)
-{
-    throw not_implemented("std::istream &operator>>(std::istream &, fraction &)", "your code should be here...");
+bool fraction::operator>(const fraction& other) const {
+    return (_numerator * other._denominator) > (other._numerator * _denominator);
 }
 
-std::string fraction::to_string() const
-{
-    throw not_implemented("std::string fraction::to_string() const", "your code should be here...");
+std::ostream& operator<<(std::ostream& stream, const fraction& obj) {
+    stream << obj._numerator << "/" << obj._denominator.abs();
+    return stream;
 }
 
-fraction fraction::sin(fraction const &epsilon) const
-{
-    throw not_implemented("fraction fraction::sin(fraction const &) const", "your code should be here...");
+std::istream& operator>>(std::istream& stream, fraction& obj) {
+    std::string str;
+    stream >> str;
+
+    size_t slash_pos = str.find('/');
+    if (slash_pos == std::string::npos) {
+        obj._numerator = big_int(str, 10);
+        obj._denominator = big_int(1);
+    } else {
+        std::string num_str = str.substr(0, slash_pos);
+        std::string den_str = str.substr(slash_pos + 1);
+        obj._numerator = big_int(num_str, 10);
+        obj._denominator = big_int(den_str, 10);
+    }
+    obj.optimise();
+    return stream;
 }
 
-fraction fraction::cos(fraction const &epsilon) const
-{
-    throw not_implemented("fraction fraction::cos(fraction const &) const", "your code should be here...");
+std::string fraction::to_string() const {
+    return _numerator.to_string() + "/" + _denominator.abs().to_string();
 }
 
-fraction fraction::tg(fraction const &epsilon) const
-{
-    throw not_implemented("fraction fraction::tg(fraction const &) const", "your code should be here...");
+fraction fraction::sin(const fraction& epsilon) const {
+    fraction result(0, 1);
+    fraction term = *this;
+    int n = 1;
+
+    do {
+        result += term;
+        fraction x_sq = (*this) * (*this);
+        term = term * x_sq;
+        term = term / fraction((2*n)*(2*n+1), 1);
+        term = term.operator-();
+        n++;
+    } while (term.abs() >= epsilon);
+
+    return result;
 }
 
-fraction fraction::ctg(fraction const &epsilon) const
-{
-    throw not_implemented("fraction fraction::ctg(fraction const &) const", "your code should be here...");
+fraction fraction::cos(const fraction& epsilon) const {
+    fraction result(1, 1);
+    fraction term = (*this) * (*this) / fraction(2, 1);
+    int n = 1;
+
+    do {
+        result -= term;
+        fraction x_sq = (*this) * (*this);
+        term = term * x_sq;
+        term = term / fraction((2*n+1)*(2*n+2), 1);
+        n++;
+    } while (term.abs() >= epsilon);
+
+    return result;
 }
 
-fraction fraction::sec(fraction const &epsilon) const
-{
-    throw not_implemented("fraction fraction::sec(fraction const &) const", "your code should be here...");
+fraction fraction::tg(const fraction& epsilon) const {
+    fraction s = this->sin(epsilon);
+    fraction c = this->cos(epsilon);
+
+    if (c == fraction(0, 1)) {
+        throw std::invalid_argument("Tangent is undefined (cos(x) = 0)");
+    }
+
+    return s / c;
 }
 
-fraction fraction::cosec(fraction const &epsilon) const
-{
-    throw not_implemented("fraction fraction::cosec(fraction const &) const", "your code should be here...");
+fraction fraction::ctg(const fraction& epsilon) const {
+    fraction s = this->sin(epsilon);
+    fraction c = this->cos(epsilon);
+
+    if (s == fraction(0, 1)) {
+        throw std::invalid_argument("Cotangent is undefined (sin(x) = 0)");
+    }
+
+    return c / s;
 }
 
-fraction fraction::pow(size_t degree) const
-{
-    throw not_implemented("fraction fraction::pow(size_t) const", "your code should be here...");
+fraction fraction::sec(const fraction& epsilon) const {
+    fraction c = this->cos(epsilon);
+
+    if (c == fraction(0, 1)) {
+        throw std::invalid_argument("Secant is undefined (cos(x) = 0)");
+    }
+
+    return fraction(1, 1) / c;
 }
 
-fraction fraction::root(size_t degree, fraction const &epsilon) const
-{
-    throw not_implemented("fraction fraction::root(size_t , fraction const &) const", "your code should be here...");
+fraction fraction::cosec(const fraction& epsilon) const {
+    fraction s = this->sin(epsilon);
+
+    if (s == fraction(0, 1)) {
+        throw std::invalid_argument("Cosecant is undefined (sin(x) = 0)");
+    }
+
+    return fraction(1, 1) / s;
 }
 
-fraction fraction::log2(fraction const &epsilon) const
-{
-    throw not_implemented("fraction fraction::log2(fraction const &) const", "your code should be here...");
+fraction fraction::pow(size_t degree) const {
+    fraction result(1, 1);
+    for (size_t i = 0; i < degree; ++i) {
+        result *= *this;
+    }
+    return result;
 }
 
-fraction fraction::ln(fraction const &epsilon) const
-{
-    throw not_implemented("fraction fraction::ln(fraction const &) const", "your code should be here...");
-}
+fraction fraction::root(size_t degree, const fraction& epsilon) const {
+    if (_numerator < big_int(0) && degree % 2 == 0) {
+        throw std::invalid_argument("Even root of negative number");
+    }
 
-fraction fraction::lg(fraction const &epsilon) const
-{
-    throw not_implemented("fraction fraction::lg(fraction const &) const", "your code should be here...");
+    fraction x_prev = *this;
+    fraction x = (*this + fraction(1, 1)) / fraction(2, 1);
+
+    while ((x - x_prev).abs() >= epsilon) {
+        x_prev = x;
+        fraction pow_n_1 = x_prev.pow(degree - 1);
+        x = (x_prev * fraction(degree - 1, 1) + (*this / pow_n_1)) / fraction(degree, 1);
+    }
+
+    return x;
 }

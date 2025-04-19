@@ -64,6 +64,19 @@ private:
 	division_rule decide_div(size_t rhs) const noexcept;
 
 public:
+
+	big_int abs() const {
+		big_int result(*this);
+		result._sign = true;
+		return result;
+	}
+
+	big_int operator-() const {
+		big_int result(*this);
+		result._sign = !result._sign;
+		return result;
+	}
+
 	using value_type = unsigned int;
 
 	template<class alloc>

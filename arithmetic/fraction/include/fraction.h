@@ -26,6 +26,14 @@ public:
 
 public:
 
+    fraction abs() const;
+
+    bool operator>=(const fraction& other) const;
+
+    bool operator>(const fraction& other) const;
+
+    fraction operator-() const;
+
     fraction &operator+=(fraction const &other) &;
 
     fraction operator+(fraction const &other) const;

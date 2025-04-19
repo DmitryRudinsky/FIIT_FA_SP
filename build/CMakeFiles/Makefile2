@@ -1626,9 +1626,9 @@ allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/clean:
 # Target rules for target allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir
 
 # All Build rule for target.
+allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
 allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
-allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 	$(MAKE) $(MAKESILENT) -f allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/build.make allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/depend
 	$(MAKE) $(MAKESILENT) -f allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/build.make allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=14,15 "Built target mp_os_allctr_allctr_bndr_tgs"
@@ -1660,13 +1660,13 @@ allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/cl
 # Target rules for target allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir
 
 # All Build rule for target.
-allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/all: allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/all
+allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/build.make allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/build.make allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=16 "Built target mp_os_allctr_allctr_bndr_tgs_tests"
@@ -1698,9 +1698,9 @@ allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_
 # Target rules for target allocator/allocator_buddies_system/CMakeFiles/mp_os_allctr_allctr_bdds_sstm.dir
 
 # All Build rule for target.
+allocator/allocator_buddies_system/CMakeFiles/mp_os_allctr_allctr_bdds_sstm.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 allocator/allocator_buddies_system/CMakeFiles/mp_os_allctr_allctr_bdds_sstm.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
 allocator/allocator_buddies_system/CMakeFiles/mp_os_allctr_allctr_bdds_sstm.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
-allocator/allocator_buddies_system/CMakeFiles/mp_os_allctr_allctr_bdds_sstm.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 	$(MAKE) $(MAKESILENT) -f allocator/allocator_buddies_system/CMakeFiles/mp_os_allctr_allctr_bdds_sstm.dir/build.make allocator/allocator_buddies_system/CMakeFiles/mp_os_allctr_allctr_bdds_sstm.dir/depend
 	$(MAKE) $(MAKESILENT) -f allocator/allocator_buddies_system/CMakeFiles/mp_os_allctr_allctr_bdds_sstm.dir/build.make allocator/allocator_buddies_system/CMakeFiles/mp_os_allctr_allctr_bdds_sstm.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=11 "Built target mp_os_allctr_allctr_bdds_sstm"
@@ -1732,13 +1732,13 @@ allocator/allocator_buddies_system/CMakeFiles/mp_os_allctr_allctr_bdds_sstm.dir/
 # Target rules for target allocator/allocator_buddies_system/tests/CMakeFiles/mp_os_allctr_allctr_bdds_sstm_tests.dir
 
 # All Build rule for target.
-allocator/allocator_buddies_system/tests/CMakeFiles/mp_os_allctr_allctr_bdds_sstm_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-allocator/allocator_buddies_system/tests/CMakeFiles/mp_os_allctr_allctr_bdds_sstm_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-allocator/allocator_buddies_system/tests/CMakeFiles/mp_os_allctr_allctr_bdds_sstm_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 allocator/allocator_buddies_system/tests/CMakeFiles/mp_os_allctr_allctr_bdds_sstm_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 allocator/allocator_buddies_system/tests/CMakeFiles/mp_os_allctr_allctr_bdds_sstm_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 allocator/allocator_buddies_system/tests/CMakeFiles/mp_os_allctr_allctr_bdds_sstm_tests.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 allocator/allocator_buddies_system/tests/CMakeFiles/mp_os_allctr_allctr_bdds_sstm_tests.dir/all: allocator/allocator_buddies_system/CMakeFiles/mp_os_allctr_allctr_bdds_sstm.dir/all
+allocator/allocator_buddies_system/tests/CMakeFiles/mp_os_allctr_allctr_bdds_sstm_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+allocator/allocator_buddies_system/tests/CMakeFiles/mp_os_allctr_allctr_bdds_sstm_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+allocator/allocator_buddies_system/tests/CMakeFiles/mp_os_allctr_allctr_bdds_sstm_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f allocator/allocator_buddies_system/tests/CMakeFiles/mp_os_allctr_allctr_bdds_sstm_tests.dir/build.make allocator/allocator_buddies_system/tests/CMakeFiles/mp_os_allctr_allctr_bdds_sstm_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f allocator/allocator_buddies_system/tests/CMakeFiles/mp_os_allctr_allctr_bdds_sstm_tests.dir/build.make allocator/allocator_buddies_system/tests/CMakeFiles/mp_os_allctr_allctr_bdds_sstm_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=12,13 "Built target mp_os_allctr_allctr_bdds_sstm_tests"
@@ -1770,9 +1770,9 @@ allocator/allocator_buddies_system/tests/CMakeFiles/mp_os_allctr_allctr_bdds_sst
 # Target rules for target allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir
 
 # All Build rule for target.
+allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
 allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
-allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 	$(MAKE) $(MAKESILENT) -f allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/build.make allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/depend
 	$(MAKE) $(MAKESILENT) -f allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/build.make allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=17,18 "Built target mp_os_allctr_allctr_glbl_hp"
@@ -1804,13 +1804,13 @@ allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/clean
 # Target rules for target allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir
 
 # All Build rule for target.
-allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/all: allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/all
+allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/build.make allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/build.make allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=19,20 "Built target mp_os_allctr_allctr_glbl_hp_tests"
@@ -1842,9 +1842,9 @@ allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tes
 # Target rules for target allocator/allocator_red_black_tree/CMakeFiles/mp_os_allctr_allctr_rb_tr.dir
 
 # All Build rule for target.
+allocator/allocator_red_black_tree/CMakeFiles/mp_os_allctr_allctr_rb_tr.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 allocator/allocator_red_black_tree/CMakeFiles/mp_os_allctr_allctr_rb_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
 allocator/allocator_red_black_tree/CMakeFiles/mp_os_allctr_allctr_rb_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
-allocator/allocator_red_black_tree/CMakeFiles/mp_os_allctr_allctr_rb_tr.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 	$(MAKE) $(MAKESILENT) -f allocator/allocator_red_black_tree/CMakeFiles/mp_os_allctr_allctr_rb_tr.dir/build.make allocator/allocator_red_black_tree/CMakeFiles/mp_os_allctr_allctr_rb_tr.dir/depend
 	$(MAKE) $(MAKESILENT) -f allocator/allocator_red_black_tree/CMakeFiles/mp_os_allctr_allctr_rb_tr.dir/build.make allocator/allocator_red_black_tree/CMakeFiles/mp_os_allctr_allctr_rb_tr.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=21 "Built target mp_os_allctr_allctr_rb_tr"
@@ -1876,13 +1876,13 @@ allocator/allocator_red_black_tree/CMakeFiles/mp_os_allctr_allctr_rb_tr.dir/clea
 # Target rules for target allocator/allocator_red_black_tree/tests/CMakeFiles/mp_os_allctr_allctr_rb_tr_tests.dir
 
 # All Build rule for target.
-allocator/allocator_red_black_tree/tests/CMakeFiles/mp_os_allctr_allctr_rb_tr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-allocator/allocator_red_black_tree/tests/CMakeFiles/mp_os_allctr_allctr_rb_tr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-allocator/allocator_red_black_tree/tests/CMakeFiles/mp_os_allctr_allctr_rb_tr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 allocator/allocator_red_black_tree/tests/CMakeFiles/mp_os_allctr_allctr_rb_tr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 allocator/allocator_red_black_tree/tests/CMakeFiles/mp_os_allctr_allctr_rb_tr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 allocator/allocator_red_black_tree/tests/CMakeFiles/mp_os_allctr_allctr_rb_tr_tests.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 allocator/allocator_red_black_tree/tests/CMakeFiles/mp_os_allctr_allctr_rb_tr_tests.dir/all: allocator/allocator_red_black_tree/CMakeFiles/mp_os_allctr_allctr_rb_tr.dir/all
+allocator/allocator_red_black_tree/tests/CMakeFiles/mp_os_allctr_allctr_rb_tr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+allocator/allocator_red_black_tree/tests/CMakeFiles/mp_os_allctr_allctr_rb_tr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+allocator/allocator_red_black_tree/tests/CMakeFiles/mp_os_allctr_allctr_rb_tr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f allocator/allocator_red_black_tree/tests/CMakeFiles/mp_os_allctr_allctr_rb_tr_tests.dir/build.make allocator/allocator_red_black_tree/tests/CMakeFiles/mp_os_allctr_allctr_rb_tr_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f allocator/allocator_red_black_tree/tests/CMakeFiles/mp_os_allctr_allctr_rb_tr_tests.dir/build.make allocator/allocator_red_black_tree/tests/CMakeFiles/mp_os_allctr_allctr_rb_tr_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=22,23 "Built target mp_os_allctr_allctr_rb_tr_tests"
@@ -1914,9 +1914,9 @@ allocator/allocator_red_black_tree/tests/CMakeFiles/mp_os_allctr_allctr_rb_tr_te
 # Target rules for target allocator/allocator_sorted_list/CMakeFiles/mp_os_allctr_allctr_srtd_lst.dir
 
 # All Build rule for target.
+allocator/allocator_sorted_list/CMakeFiles/mp_os_allctr_allctr_srtd_lst.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 allocator/allocator_sorted_list/CMakeFiles/mp_os_allctr_allctr_srtd_lst.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
 allocator/allocator_sorted_list/CMakeFiles/mp_os_allctr_allctr_srtd_lst.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
-allocator/allocator_sorted_list/CMakeFiles/mp_os_allctr_allctr_srtd_lst.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 	$(MAKE) $(MAKESILENT) -f allocator/allocator_sorted_list/CMakeFiles/mp_os_allctr_allctr_srtd_lst.dir/build.make allocator/allocator_sorted_list/CMakeFiles/mp_os_allctr_allctr_srtd_lst.dir/depend
 	$(MAKE) $(MAKESILENT) -f allocator/allocator_sorted_list/CMakeFiles/mp_os_allctr_allctr_srtd_lst.dir/build.make allocator/allocator_sorted_list/CMakeFiles/mp_os_allctr_allctr_srtd_lst.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=24,25 "Built target mp_os_allctr_allctr_srtd_lst"
@@ -1948,13 +1948,13 @@ allocator/allocator_sorted_list/CMakeFiles/mp_os_allctr_allctr_srtd_lst.dir/clea
 # Target rules for target allocator/allocator_sorted_list/tests/CMakeFiles/mp_os_allctr_allctr_srtd_lst_tests.dir
 
 # All Build rule for target.
-allocator/allocator_sorted_list/tests/CMakeFiles/mp_os_allctr_allctr_srtd_lst_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-allocator/allocator_sorted_list/tests/CMakeFiles/mp_os_allctr_allctr_srtd_lst_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-allocator/allocator_sorted_list/tests/CMakeFiles/mp_os_allctr_allctr_srtd_lst_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 allocator/allocator_sorted_list/tests/CMakeFiles/mp_os_allctr_allctr_srtd_lst_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 allocator/allocator_sorted_list/tests/CMakeFiles/mp_os_allctr_allctr_srtd_lst_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 allocator/allocator_sorted_list/tests/CMakeFiles/mp_os_allctr_allctr_srtd_lst_tests.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 allocator/allocator_sorted_list/tests/CMakeFiles/mp_os_allctr_allctr_srtd_lst_tests.dir/all: allocator/allocator_sorted_list/CMakeFiles/mp_os_allctr_allctr_srtd_lst.dir/all
+allocator/allocator_sorted_list/tests/CMakeFiles/mp_os_allctr_allctr_srtd_lst_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+allocator/allocator_sorted_list/tests/CMakeFiles/mp_os_allctr_allctr_srtd_lst_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+allocator/allocator_sorted_list/tests/CMakeFiles/mp_os_allctr_allctr_srtd_lst_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f allocator/allocator_sorted_list/tests/CMakeFiles/mp_os_allctr_allctr_srtd_lst_tests.dir/build.make allocator/allocator_sorted_list/tests/CMakeFiles/mp_os_allctr_allctr_srtd_lst_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f allocator/allocator_sorted_list/tests/CMakeFiles/mp_os_allctr_allctr_srtd_lst_tests.dir/build.make allocator/allocator_sorted_list/tests/CMakeFiles/mp_os_allctr_allctr_srtd_lst_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=26 "Built target mp_os_allctr_allctr_srtd_lst_tests"
@@ -1986,8 +1986,8 @@ allocator/allocator_sorted_list/tests/CMakeFiles/mp_os_allctr_allctr_srtd_lst_te
 # Target rules for target arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir
 
 # All Build rule for target.
-arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
 arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
+arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
 	$(MAKE) $(MAKESILENT) -f arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/build.make arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/depend
 	$(MAKE) $(MAKESILENT) -f arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/build.make arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=27,28 "Built target mp_os_arthmtc_bg_intgr"
@@ -2019,13 +2019,13 @@ arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/clean:
 # Target rules for target arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir
 
 # All Build rule for target.
-arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/all: arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/all
+arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/build.make arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/depend
 	$(MAKE) $(MAKESILENT) -f arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/build.make arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=36 "Built target mp_os_arthmtc_bg_intgr_tests_bgnt"
@@ -2057,13 +2057,13 @@ arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests
 # Target rules for target arithmetic/big_integer/tests/Burnikel_Ziegler_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn.dir
 
 # All Build rule for target.
-arithmetic/big_integer/tests/Burnikel_Ziegler_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-arithmetic/big_integer/tests/Burnikel_Ziegler_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-arithmetic/big_integer/tests/Burnikel_Ziegler_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 arithmetic/big_integer/tests/Burnikel_Ziegler_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 arithmetic/big_integer/tests/Burnikel_Ziegler_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 arithmetic/big_integer/tests/Burnikel_Ziegler_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 arithmetic/big_integer/tests/Burnikel_Ziegler_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn.dir/all: arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/all
+arithmetic/big_integer/tests/Burnikel_Ziegler_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+arithmetic/big_integer/tests/Burnikel_Ziegler_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+arithmetic/big_integer/tests/Burnikel_Ziegler_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f arithmetic/big_integer/tests/Burnikel_Ziegler_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn.dir/build.make arithmetic/big_integer/tests/Burnikel_Ziegler_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn.dir/depend
 	$(MAKE) $(MAKESILENT) -f arithmetic/big_integer/tests/Burnikel_Ziegler_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn.dir/build.make arithmetic/big_integer/tests/Burnikel_Ziegler_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=29,30 "Built target mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn"
@@ -2095,13 +2095,13 @@ arithmetic/big_integer/tests/Burnikel_Ziegler_division/CMakeFiles/mp_os_arthmtc_
 # Target rules for target arithmetic/big_integer/tests/Karatsuba_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn.dir
 
 # All Build rule for target.
-arithmetic/big_integer/tests/Karatsuba_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-arithmetic/big_integer/tests/Karatsuba_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-arithmetic/big_integer/tests/Karatsuba_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 arithmetic/big_integer/tests/Karatsuba_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 arithmetic/big_integer/tests/Karatsuba_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 arithmetic/big_integer/tests/Karatsuba_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 arithmetic/big_integer/tests/Karatsuba_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn.dir/all: arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/all
+arithmetic/big_integer/tests/Karatsuba_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+arithmetic/big_integer/tests/Karatsuba_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+arithmetic/big_integer/tests/Karatsuba_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f arithmetic/big_integer/tests/Karatsuba_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn.dir/build.make arithmetic/big_integer/tests/Karatsuba_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn.dir/depend
 	$(MAKE) $(MAKESILENT) -f arithmetic/big_integer/tests/Karatsuba_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn.dir/build.make arithmetic/big_integer/tests/Karatsuba_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=31 "Built target mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn"
@@ -2133,13 +2133,13 @@ arithmetic/big_integer/tests/Karatsuba_multiplication/CMakeFiles/mp_os_arthmtc_b
 # Target rules for target arithmetic/big_integer/tests/Newton_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Newton_dvsn.dir
 
 # All Build rule for target.
-arithmetic/big_integer/tests/Newton_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Newton_dvsn.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-arithmetic/big_integer/tests/Newton_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Newton_dvsn.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-arithmetic/big_integer/tests/Newton_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Newton_dvsn.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 arithmetic/big_integer/tests/Newton_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Newton_dvsn.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 arithmetic/big_integer/tests/Newton_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Newton_dvsn.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 arithmetic/big_integer/tests/Newton_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Newton_dvsn.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 arithmetic/big_integer/tests/Newton_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Newton_dvsn.dir/all: arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/all
+arithmetic/big_integer/tests/Newton_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Newton_dvsn.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+arithmetic/big_integer/tests/Newton_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Newton_dvsn.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+arithmetic/big_integer/tests/Newton_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Newton_dvsn.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f arithmetic/big_integer/tests/Newton_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Newton_dvsn.dir/build.make arithmetic/big_integer/tests/Newton_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Newton_dvsn.dir/depend
 	$(MAKE) $(MAKESILENT) -f arithmetic/big_integer/tests/Newton_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Newton_dvsn.dir/build.make arithmetic/big_integer/tests/Newton_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Newton_dvsn.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=32,33 "Built target mp_os_arthmtc_bg_intgr_tests_Newton_dvsn"
@@ -2171,13 +2171,13 @@ arithmetic/big_integer/tests/Newton_division/CMakeFiles/mp_os_arthmtc_bg_intgr_t
 # Target rules for target arithmetic/big_integer/tests/Schonhage_Strassen_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen.dir
 
 # All Build rule for target.
-arithmetic/big_integer/tests/Schonhage_Strassen_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-arithmetic/big_integer/tests/Schonhage_Strassen_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-arithmetic/big_integer/tests/Schonhage_Strassen_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 arithmetic/big_integer/tests/Schonhage_Strassen_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 arithmetic/big_integer/tests/Schonhage_Strassen_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 arithmetic/big_integer/tests/Schonhage_Strassen_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 arithmetic/big_integer/tests/Schonhage_Strassen_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen.dir/all: arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/all
+arithmetic/big_integer/tests/Schonhage_Strassen_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+arithmetic/big_integer/tests/Schonhage_Strassen_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+arithmetic/big_integer/tests/Schonhage_Strassen_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f arithmetic/big_integer/tests/Schonhage_Strassen_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen.dir/build.make arithmetic/big_integer/tests/Schonhage_Strassen_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen.dir/depend
 	$(MAKE) $(MAKESILENT) -f arithmetic/big_integer/tests/Schonhage_Strassen_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen.dir/build.make arithmetic/big_integer/tests/Schonhage_Strassen_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=34,35 "Built target mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen"
@@ -2209,13 +2209,13 @@ arithmetic/big_integer/tests/Schonhage_Strassen_multiplication/CMakeFiles/mp_os_
 # Target rules for target arithmetic/big_integer/tests/trivial_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_dvsn.dir
 
 # All Build rule for target.
-arithmetic/big_integer/tests/trivial_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_dvsn.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-arithmetic/big_integer/tests/trivial_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_dvsn.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-arithmetic/big_integer/tests/trivial_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_dvsn.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 arithmetic/big_integer/tests/trivial_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_dvsn.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 arithmetic/big_integer/tests/trivial_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_dvsn.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 arithmetic/big_integer/tests/trivial_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_dvsn.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 arithmetic/big_integer/tests/trivial_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_dvsn.dir/all: arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/all
+arithmetic/big_integer/tests/trivial_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_dvsn.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+arithmetic/big_integer/tests/trivial_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_dvsn.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+arithmetic/big_integer/tests/trivial_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_dvsn.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f arithmetic/big_integer/tests/trivial_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_dvsn.dir/build.make arithmetic/big_integer/tests/trivial_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_dvsn.dir/depend
 	$(MAKE) $(MAKESILENT) -f arithmetic/big_integer/tests/trivial_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_dvsn.dir/build.make arithmetic/big_integer/tests/trivial_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_dvsn.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=37,38 "Built target mp_os_arthmtc_bg_intgr_tests_trvl_dvsn"
@@ -2247,13 +2247,13 @@ arithmetic/big_integer/tests/trivial_division/CMakeFiles/mp_os_arthmtc_bg_intgr_
 # Target rules for target arithmetic/big_integer/tests/trivial_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn.dir
 
 # All Build rule for target.
-arithmetic/big_integer/tests/trivial_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-arithmetic/big_integer/tests/trivial_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-arithmetic/big_integer/tests/trivial_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 arithmetic/big_integer/tests/trivial_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 arithmetic/big_integer/tests/trivial_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 arithmetic/big_integer/tests/trivial_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 arithmetic/big_integer/tests/trivial_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn.dir/all: arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/all
+arithmetic/big_integer/tests/trivial_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+arithmetic/big_integer/tests/trivial_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+arithmetic/big_integer/tests/trivial_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f arithmetic/big_integer/tests/trivial_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn.dir/build.make arithmetic/big_integer/tests/trivial_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn.dir/depend
 	$(MAKE) $(MAKESILENT) -f arithmetic/big_integer/tests/trivial_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn.dir/build.make arithmetic/big_integer/tests/trivial_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=39,40 "Built target mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn"
@@ -2285,10 +2285,10 @@ arithmetic/big_integer/tests/trivial_multiplication/CMakeFiles/mp_os_arthmtc_bg_
 # Target rules for target arithmetic/continued_fraction/CMakeFiles/mp_os_arthmtc_cntnd_frctn.dir
 
 # All Build rule for target.
-arithmetic/continued_fraction/CMakeFiles/mp_os_arthmtc_cntnd_frctn.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
 arithmetic/continued_fraction/CMakeFiles/mp_os_arthmtc_cntnd_frctn.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 arithmetic/continued_fraction/CMakeFiles/mp_os_arthmtc_cntnd_frctn.dir/all: arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/all
 arithmetic/continued_fraction/CMakeFiles/mp_os_arthmtc_cntnd_frctn.dir/all: arithmetic/fraction/CMakeFiles/mp_os_arthmtc_frctn.dir/all
+arithmetic/continued_fraction/CMakeFiles/mp_os_arthmtc_cntnd_frctn.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
 	$(MAKE) $(MAKESILENT) -f arithmetic/continued_fraction/CMakeFiles/mp_os_arthmtc_cntnd_frctn.dir/build.make arithmetic/continued_fraction/CMakeFiles/mp_os_arthmtc_cntnd_frctn.dir/depend
 	$(MAKE) $(MAKESILENT) -f arithmetic/continued_fraction/CMakeFiles/mp_os_arthmtc_cntnd_frctn.dir/build.make arithmetic/continued_fraction/CMakeFiles/mp_os_arthmtc_cntnd_frctn.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=41 "Built target mp_os_arthmtc_cntnd_frctn"
@@ -2320,9 +2320,9 @@ arithmetic/continued_fraction/CMakeFiles/mp_os_arthmtc_cntnd_frctn.dir/clean:
 # Target rules for target arithmetic/fraction/CMakeFiles/mp_os_arthmtc_frctn.dir
 
 # All Build rule for target.
-arithmetic/fraction/CMakeFiles/mp_os_arthmtc_frctn.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
 arithmetic/fraction/CMakeFiles/mp_os_arthmtc_frctn.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 arithmetic/fraction/CMakeFiles/mp_os_arthmtc_frctn.dir/all: arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/all
+arithmetic/fraction/CMakeFiles/mp_os_arthmtc_frctn.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
 	$(MAKE) $(MAKESILENT) -f arithmetic/fraction/CMakeFiles/mp_os_arthmtc_frctn.dir/build.make arithmetic/fraction/CMakeFiles/mp_os_arthmtc_frctn.dir/depend
 	$(MAKE) $(MAKESILENT) -f arithmetic/fraction/CMakeFiles/mp_os_arthmtc_frctn.dir/build.make arithmetic/fraction/CMakeFiles/mp_os_arthmtc_frctn.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=42,43 "Built target mp_os_arthmtc_frctn"
@@ -2386,10 +2386,10 @@ associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/clean:
 # Target rules for target associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir
 
 # All Build rule for target.
-associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
+associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/build.make associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/build.make associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=46 "Built target mp_os_assctv_cntnr_hsh_tbl"
@@ -2421,14 +2421,14 @@ associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/clean
 # Target rules for target associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir
 
 # All Build rule for target.
-associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
 associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/all: associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/all
+associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/build.make associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/build.make associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=47,48 "Built target mp_os_assctv_cntnr_hsh_tbl_tests"
@@ -2460,10 +2460,10 @@ associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tes
 # Target rules for target associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir
 
 # All Build rule for target.
-associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
+associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/build.make associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/build.make associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=49,50 "Built target mp_os_assctv_cntnr_srch_tr"
@@ -2495,11 +2495,11 @@ associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/clea
 # Target rules for target associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir
 
 # All Build rule for target.
-associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
 associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
+associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/build.make associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/build.make associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=51 "Built target mp_os_assctv_cntnr_srch_tr_bnr_srch_tr"
@@ -2531,12 +2531,12 @@ associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cnt
 # Target rules for target associative_container/search_tree/binary_search_tree/AVL_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr.dir
 
 # All Build rule for target.
-associative_container/search_tree/binary_search_tree/AVL_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/binary_search_tree/AVL_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/search_tree/binary_search_tree/AVL_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 associative_container/search_tree/binary_search_tree/AVL_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
 associative_container/search_tree/binary_search_tree/AVL_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr.dir/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
 associative_container/search_tree/binary_search_tree/AVL_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr.dir/all: associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all
+associative_container/search_tree/binary_search_tree/AVL_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/search_tree/binary_search_tree/AVL_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/binary_search_tree/AVL_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr.dir/build.make associative_container/search_tree/binary_search_tree/AVL_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/binary_search_tree/AVL_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr.dir/build.make associative_container/search_tree/binary_search_tree/AVL_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=52,53 "Built target mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr"
@@ -2568,9 +2568,6 @@ associative_container/search_tree/binary_search_tree/AVL_tree/CMakeFiles/mp_os_a
 # Target rules for target associative_container/search_tree/binary_search_tree/AVL_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests.dir
 
 # All Build rule for target.
-associative_container/search_tree/binary_search_tree/AVL_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/binary_search_tree/AVL_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-associative_container/search_tree/binary_search_tree/AVL_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/search_tree/binary_search_tree/AVL_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 associative_container/search_tree/binary_search_tree/AVL_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 associative_container/search_tree/binary_search_tree/AVL_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
@@ -2578,6 +2575,9 @@ associative_container/search_tree/binary_search_tree/AVL_tree/tests/CMakeFiles/m
 associative_container/search_tree/binary_search_tree/AVL_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests.dir/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
 associative_container/search_tree/binary_search_tree/AVL_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests.dir/all: associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all
 associative_container/search_tree/binary_search_tree/AVL_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests.dir/all: associative_container/search_tree/binary_search_tree/AVL_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr.dir/all
+associative_container/search_tree/binary_search_tree/AVL_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/search_tree/binary_search_tree/AVL_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+associative_container/search_tree/binary_search_tree/AVL_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/binary_search_tree/AVL_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests.dir/build.make associative_container/search_tree/binary_search_tree/AVL_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/binary_search_tree/AVL_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests.dir/build.make associative_container/search_tree/binary_search_tree/AVL_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=54,55 "Built target mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests"
@@ -2609,12 +2609,12 @@ associative_container/search_tree/binary_search_tree/AVL_tree/tests/CMakeFiles/m
 # Target rules for target associative_container/search_tree/binary_search_tree/red_black_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr.dir
 
 # All Build rule for target.
-associative_container/search_tree/binary_search_tree/red_black_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/binary_search_tree/red_black_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/search_tree/binary_search_tree/red_black_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 associative_container/search_tree/binary_search_tree/red_black_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
 associative_container/search_tree/binary_search_tree/red_black_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr.dir/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
 associative_container/search_tree/binary_search_tree/red_black_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr.dir/all: associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all
+associative_container/search_tree/binary_search_tree/red_black_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/search_tree/binary_search_tree/red_black_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/binary_search_tree/red_black_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr.dir/build.make associative_container/search_tree/binary_search_tree/red_black_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/binary_search_tree/red_black_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr.dir/build.make associative_container/search_tree/binary_search_tree/red_black_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=56 "Built target mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr"
@@ -2646,9 +2646,6 @@ associative_container/search_tree/binary_search_tree/red_black_tree/CMakeFiles/m
 # Target rules for target associative_container/search_tree/binary_search_tree/red_black_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests.dir
 
 # All Build rule for target.
-associative_container/search_tree/binary_search_tree/red_black_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/binary_search_tree/red_black_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-associative_container/search_tree/binary_search_tree/red_black_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/search_tree/binary_search_tree/red_black_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 associative_container/search_tree/binary_search_tree/red_black_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 associative_container/search_tree/binary_search_tree/red_black_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
@@ -2657,6 +2654,9 @@ associative_container/search_tree/binary_search_tree/red_black_tree/tests/CMakeF
 associative_container/search_tree/binary_search_tree/red_black_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests.dir/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
 associative_container/search_tree/binary_search_tree/red_black_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests.dir/all: associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all
 associative_container/search_tree/binary_search_tree/red_black_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests.dir/all: associative_container/search_tree/binary_search_tree/red_black_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr.dir/all
+associative_container/search_tree/binary_search_tree/red_black_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/search_tree/binary_search_tree/red_black_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+associative_container/search_tree/binary_search_tree/red_black_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/binary_search_tree/red_black_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests.dir/build.make associative_container/search_tree/binary_search_tree/red_black_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/binary_search_tree/red_black_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests.dir/build.make associative_container/search_tree/binary_search_tree/red_black_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=57,58 "Built target mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests"
@@ -2688,12 +2688,12 @@ associative_container/search_tree/binary_search_tree/red_black_tree/tests/CMakeF
 # Target rules for target associative_container/search_tree/binary_search_tree/scapegoat_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr.dir
 
 # All Build rule for target.
-associative_container/search_tree/binary_search_tree/scapegoat_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/binary_search_tree/scapegoat_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/search_tree/binary_search_tree/scapegoat_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 associative_container/search_tree/binary_search_tree/scapegoat_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
 associative_container/search_tree/binary_search_tree/scapegoat_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr.dir/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
 associative_container/search_tree/binary_search_tree/scapegoat_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr.dir/all: associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all
+associative_container/search_tree/binary_search_tree/scapegoat_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/search_tree/binary_search_tree/scapegoat_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/binary_search_tree/scapegoat_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr.dir/build.make associative_container/search_tree/binary_search_tree/scapegoat_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/binary_search_tree/scapegoat_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr.dir/build.make associative_container/search_tree/binary_search_tree/scapegoat_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=59,60 "Built target mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr"
@@ -2725,9 +2725,6 @@ associative_container/search_tree/binary_search_tree/scapegoat_tree/CMakeFiles/m
 # Target rules for target associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests.dir
 
 # All Build rule for target.
-associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
@@ -2736,6 +2733,9 @@ associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/CMakeF
 associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests.dir/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
 associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests.dir/all: associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all
 associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests.dir/all: associative_container/search_tree/binary_search_tree/scapegoat_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr.dir/all
+associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests.dir/build.make associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests.dir/build.make associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=61 "Built target mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests"
@@ -2767,12 +2767,12 @@ associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/CMakeF
 # Target rules for target associative_container/search_tree/binary_search_tree/splay_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.dir
 
 # All Build rule for target.
-associative_container/search_tree/binary_search_tree/splay_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/binary_search_tree/splay_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/search_tree/binary_search_tree/splay_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 associative_container/search_tree/binary_search_tree/splay_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
 associative_container/search_tree/binary_search_tree/splay_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.dir/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
 associative_container/search_tree/binary_search_tree/splay_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.dir/all: associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all
+associative_container/search_tree/binary_search_tree/splay_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/search_tree/binary_search_tree/splay_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/binary_search_tree/splay_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.dir/build.make associative_container/search_tree/binary_search_tree/splay_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/binary_search_tree/splay_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.dir/build.make associative_container/search_tree/binary_search_tree/splay_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=62,63 "Built target mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr"
@@ -2804,9 +2804,6 @@ associative_container/search_tree/binary_search_tree/splay_tree/CMakeFiles/mp_os
 # Target rules for target associative_container/search_tree/binary_search_tree/splay_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir
 
 # All Build rule for target.
-associative_container/search_tree/binary_search_tree/splay_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/binary_search_tree/splay_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-associative_container/search_tree/binary_search_tree/splay_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/search_tree/binary_search_tree/splay_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 associative_container/search_tree/binary_search_tree/splay_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 associative_container/search_tree/binary_search_tree/splay_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
@@ -2815,6 +2812,9 @@ associative_container/search_tree/binary_search_tree/splay_tree/tests/CMakeFiles
 associative_container/search_tree/binary_search_tree/splay_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
 associative_container/search_tree/binary_search_tree/splay_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir/all: associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all
 associative_container/search_tree/binary_search_tree/splay_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir/all: associative_container/search_tree/binary_search_tree/splay_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.dir/all
+associative_container/search_tree/binary_search_tree/splay_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/search_tree/binary_search_tree/splay_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+associative_container/search_tree/binary_search_tree/splay_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/binary_search_tree/splay_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir/build.make associative_container/search_tree/binary_search_tree/splay_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/binary_search_tree/splay_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir/build.make associative_container/search_tree/binary_search_tree/splay_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=64,65 "Built target mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests"
@@ -2846,9 +2846,6 @@ associative_container/search_tree/binary_search_tree/splay_tree/tests/CMakeFiles
 # Target rules for target associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir
 
 # All Build rule for target.
-associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
@@ -2856,6 +2853,9 @@ associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assc
 associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
 associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
 associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all: associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all
+associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/build.make associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/build.make associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=66 "Built target mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests"
@@ -2887,12 +2887,12 @@ associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assc
 # Target rules for target associative_container/search_tree/indexing_tree/b_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.dir
 
 # All Build rule for target.
-associative_container/search_tree/indexing_tree/b_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/indexing_tree/b_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-associative_container/search_tree/indexing_tree/b_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/search_tree/indexing_tree/b_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 associative_container/search_tree/indexing_tree/b_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
 associative_container/search_tree/indexing_tree/b_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.dir/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
+associative_container/search_tree/indexing_tree/b_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/search_tree/indexing_tree/b_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+associative_container/search_tree/indexing_tree/b_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.dir/build.make associative_container/search_tree/indexing_tree/b_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.dir/build.make associative_container/search_tree/indexing_tree/b_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=67,68 "Built target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr"
@@ -2924,15 +2924,15 @@ associative_container/search_tree/indexing_tree/b_plus_tree/CMakeFiles/mp_os_ass
 # Target rules for target associative_container/search_tree/indexing_tree/b_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir
 
 # All Build rule for target.
-associative_container/search_tree/indexing_tree/b_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/indexing_tree/b_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-associative_container/search_tree/indexing_tree/b_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/search_tree/indexing_tree/b_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 associative_container/search_tree/indexing_tree/b_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 associative_container/search_tree/indexing_tree/b_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 associative_container/search_tree/indexing_tree/b_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
 associative_container/search_tree/indexing_tree/b_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
 associative_container/search_tree/indexing_tree/b_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir/all: associative_container/search_tree/indexing_tree/b_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.dir/all
+associative_container/search_tree/indexing_tree/b_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/search_tree/indexing_tree/b_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+associative_container/search_tree/indexing_tree/b_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir/build.make associative_container/search_tree/indexing_tree/b_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir/build.make associative_container/search_tree/indexing_tree/b_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=69,70 "Built target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests"
@@ -2964,12 +2964,12 @@ associative_container/search_tree/indexing_tree/b_plus_tree/tests/CMakeFiles/mp_
 # Target rules for target associative_container/search_tree/indexing_tree/b_star_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.dir
 
 # All Build rule for target.
-associative_container/search_tree/indexing_tree/b_star_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/indexing_tree/b_star_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-associative_container/search_tree/indexing_tree/b_star_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/search_tree/indexing_tree/b_star_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 associative_container/search_tree/indexing_tree/b_star_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
 associative_container/search_tree/indexing_tree/b_star_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.dir/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
+associative_container/search_tree/indexing_tree/b_star_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/search_tree/indexing_tree/b_star_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+associative_container/search_tree/indexing_tree/b_star_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_star_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.dir/build.make associative_container/search_tree/indexing_tree/b_star_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_star_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.dir/build.make associative_container/search_tree/indexing_tree/b_star_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=71 "Built target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr"
@@ -3001,15 +3001,15 @@ associative_container/search_tree/indexing_tree/b_star_plus_tree/CMakeFiles/mp_o
 # Target rules for target associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir
 
 # All Build rule for target.
-associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
 associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
 associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/all: associative_container/search_tree/indexing_tree/b_star_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.dir/all
+associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/build.make associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/build.make associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=72,73 "Built target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests"
@@ -3041,12 +3041,12 @@ associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFile
 # Target rules for target associative_container/search_tree/indexing_tree/b_star_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.dir
 
 # All Build rule for target.
-associative_container/search_tree/indexing_tree/b_star_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/indexing_tree/b_star_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-associative_container/search_tree/indexing_tree/b_star_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/search_tree/indexing_tree/b_star_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 associative_container/search_tree/indexing_tree/b_star_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
 associative_container/search_tree/indexing_tree/b_star_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.dir/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
+associative_container/search_tree/indexing_tree/b_star_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/search_tree/indexing_tree/b_star_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+associative_container/search_tree/indexing_tree/b_star_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_star_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.dir/build.make associative_container/search_tree/indexing_tree/b_star_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_star_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.dir/build.make associative_container/search_tree/indexing_tree/b_star_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=74,75 "Built target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr"
@@ -3078,15 +3078,15 @@ associative_container/search_tree/indexing_tree/b_star_tree/CMakeFiles/mp_os_ass
 # Target rules for target associative_container/search_tree/indexing_tree/b_star_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir
 
 # All Build rule for target.
-associative_container/search_tree/indexing_tree/b_star_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir/all: associative_container/search_tree/indexing_tree/b_star_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.dir/all
-associative_container/search_tree/indexing_tree/b_star_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/indexing_tree/b_star_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-associative_container/search_tree/indexing_tree/b_star_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/search_tree/indexing_tree/b_star_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 associative_container/search_tree/indexing_tree/b_star_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 associative_container/search_tree/indexing_tree/b_star_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 associative_container/search_tree/indexing_tree/b_star_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
 associative_container/search_tree/indexing_tree/b_star_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
+associative_container/search_tree/indexing_tree/b_star_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir/all: associative_container/search_tree/indexing_tree/b_star_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.dir/all
+associative_container/search_tree/indexing_tree/b_star_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/search_tree/indexing_tree/b_star_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+associative_container/search_tree/indexing_tree/b_star_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_star_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir/build.make associative_container/search_tree/indexing_tree/b_star_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_star_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir/build.make associative_container/search_tree/indexing_tree/b_star_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=76 "Built target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests"
@@ -3118,12 +3118,12 @@ associative_container/search_tree/indexing_tree/b_star_tree/tests/CMakeFiles/mp_
 # Target rules for target associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir
 
 # All Build rule for target.
-associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
 associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
+associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/build.make associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/build.make associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=77,78 "Built target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr"
@@ -3155,15 +3155,15 @@ associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/mp_os_assctv_c
 # Target rules for target associative_container/search_tree/indexing_tree/b_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir
 
 # All Build rule for target.
-associative_container/search_tree/indexing_tree/b_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir/all: associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all
-associative_container/search_tree/indexing_tree/b_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/indexing_tree/b_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-associative_container/search_tree/indexing_tree/b_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/search_tree/indexing_tree/b_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 associative_container/search_tree/indexing_tree/b_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 associative_container/search_tree/indexing_tree/b_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 associative_container/search_tree/indexing_tree/b_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
 associative_container/search_tree/indexing_tree/b_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
+associative_container/search_tree/indexing_tree/b_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir/all: associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all
+associative_container/search_tree/indexing_tree/b_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/search_tree/indexing_tree/b_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+associative_container/search_tree/indexing_tree/b_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir/build.make associative_container/search_tree/indexing_tree/b_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir/build.make associative_container/search_tree/indexing_tree/b_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=82,83 "Built target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests"
@@ -3195,12 +3195,12 @@ associative_container/search_tree/indexing_tree/b_tree/tests/CMakeFiles/mp_os_as
 # Target rules for target associative_container/search_tree/indexing_tree/b_tree_disk/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk.dir
 
 # All Build rule for target.
-associative_container/search_tree/indexing_tree/b_tree_disk/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/indexing_tree/b_tree_disk/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-associative_container/search_tree/indexing_tree/b_tree_disk/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/search_tree/indexing_tree/b_tree_disk/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 associative_container/search_tree/indexing_tree/b_tree_disk/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
 associative_container/search_tree/indexing_tree/b_tree_disk/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk.dir/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
+associative_container/search_tree/indexing_tree/b_tree_disk/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/search_tree/indexing_tree/b_tree_disk/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+associative_container/search_tree/indexing_tree/b_tree_disk/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_tree_disk/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk.dir/build.make associative_container/search_tree/indexing_tree/b_tree_disk/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_tree_disk/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk.dir/build.make associative_container/search_tree/indexing_tree/b_tree_disk/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=79,80 "Built target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk"
@@ -3232,15 +3232,15 @@ associative_container/search_tree/indexing_tree/b_tree_disk/CMakeFiles/mp_os_ass
 # Target rules for target associative_container/search_tree/indexing_tree/b_tree_disk/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk_tests.dir
 
 # All Build rule for target.
-associative_container/search_tree/indexing_tree/b_tree_disk/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk_tests.dir/all: associative_container/search_tree/indexing_tree/b_tree_disk/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk.dir/all
-associative_container/search_tree/indexing_tree/b_tree_disk/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/indexing_tree/b_tree_disk/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-associative_container/search_tree/indexing_tree/b_tree_disk/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 associative_container/search_tree/indexing_tree/b_tree_disk/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 associative_container/search_tree/indexing_tree/b_tree_disk/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 associative_container/search_tree/indexing_tree/b_tree_disk/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk_tests.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
 associative_container/search_tree/indexing_tree/b_tree_disk/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk_tests.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
 associative_container/search_tree/indexing_tree/b_tree_disk/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk_tests.dir/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
+associative_container/search_tree/indexing_tree/b_tree_disk/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk_tests.dir/all: associative_container/search_tree/indexing_tree/b_tree_disk/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk.dir/all
+associative_container/search_tree/indexing_tree/b_tree_disk/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
+associative_container/search_tree/indexing_tree/b_tree_disk/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
+associative_container/search_tree/indexing_tree/b_tree_disk/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_tree_disk/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk_tests.dir/build.make associative_container/search_tree/indexing_tree/b_tree_disk/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_tree_disk/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk_tests.dir/build.make associative_container/search_tree/indexing_tree/b_tree_disk/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=81 "Built target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_dsk_tests"
@@ -3337,11 +3337,11 @@ logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/clean:
 # Target rules for target logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir
 
 # All Build rule for target.
+logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
 logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
 logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
-logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/build.make logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/build.make logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=89,90 "Built target mp_os_lggr_clnt_lggr_tests"
@@ -3438,11 +3438,11 @@ logger/server_logger/CMakeFiles/mp_os_lggr_srvr_lggr.dir/clean:
 # Target rules for target logger/server_logger/tests/CMakeFiles/mp_os_lggr_srvr_lggr_tests.dir
 
 # All Build rule for target.
+logger/server_logger/tests/CMakeFiles/mp_os_lggr_srvr_lggr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+logger/server_logger/tests/CMakeFiles/mp_os_lggr_srvr_lggr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 logger/server_logger/tests/CMakeFiles/mp_os_lggr_srvr_lggr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
 logger/server_logger/tests/CMakeFiles/mp_os_lggr_srvr_lggr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 logger/server_logger/tests/CMakeFiles/mp_os_lggr_srvr_lggr_tests.dir/all: logger/server_logger/CMakeFiles/mp_os_lggr_srvr_lggr.dir/all
-logger/server_logger/tests/CMakeFiles/mp_os_lggr_srvr_lggr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-logger/server_logger/tests/CMakeFiles/mp_os_lggr_srvr_lggr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f logger/server_logger/tests/CMakeFiles/mp_os_lggr_srvr_lggr_tests.dir/build.make logger/server_logger/tests/CMakeFiles/mp_os_lggr_srvr_lggr_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f logger/server_logger/tests/CMakeFiles/mp_os_lggr_srvr_lggr_tests.dir/build.make logger/server_logger/tests/CMakeFiles/mp_os_lggr_srvr_lggr_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=96,97 "Built target mp_os_lggr_srvr_lggr_tests"
@@ -3474,11 +3474,11 @@ logger/server_logger/tests/CMakeFiles/mp_os_lggr_srvr_lggr_tests.dir/clean:
 # Target rules for target logger/server_logger/tests/CMakeFiles/serv_test.dir
 
 # All Build rule for target.
+logger/server_logger/tests/CMakeFiles/serv_test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+logger/server_logger/tests/CMakeFiles/serv_test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 logger/server_logger/tests/CMakeFiles/serv_test.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
 logger/server_logger/tests/CMakeFiles/serv_test.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
 logger/server_logger/tests/CMakeFiles/serv_test.dir/all: logger/server_logger/CMakeFiles/mp_os_lggr_srvr_lggr.dir/all
-logger/server_logger/tests/CMakeFiles/serv_test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-logger/server_logger/tests/CMakeFiles/serv_test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f logger/server_logger/tests/CMakeFiles/serv_test.dir/build.make logger/server_logger/tests/CMakeFiles/serv_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f logger/server_logger/tests/CMakeFiles/serv_test.dir/build.make logger/server_logger/tests/CMakeFiles/serv_test.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/build/CMakeFiles --progress-num=98,99,100 "Built target serv_test"

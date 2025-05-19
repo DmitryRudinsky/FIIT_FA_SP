@@ -146,6 +146,7 @@ fraction fraction::sin(fraction const &epsilon) const {
 	fraction result(0, 1);
 	fraction term = x;
 	int n = 1;
+    // Вычисляем следующий член ряда: term = term * (-x^2 / ((2n)*(2n+1)))
 	while (term >= epsilon || -term <= epsilon) {
 		result += term;
 		term = term * (-x * x);
@@ -161,6 +162,7 @@ fraction fraction::cos(fraction const &epsilon) const {
 	fraction result(1, 1);
 	fraction term(1, 1);
 	int n = 1;
+    // Вычисляем следующий член ряда: term = term * (-x^2 / ((2n-1)*(2n)))
 	while (true) {
 		term = term * (-x * x);
 		big_int dem = (2 * n - 1) * (2 * n);

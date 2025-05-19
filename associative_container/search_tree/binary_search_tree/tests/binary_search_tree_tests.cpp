@@ -149,7 +149,6 @@ TEST(binarySearchTreePositiveTests, noIteratorTest)
     logger->trace("binarySearchTreePositiveTests.test1 started");
 
     auto bst = std::make_unique<binary_search_tree<int, std::string>>(std::less<int>(), nullptr, logger.get());
-//    auto bst = new binary_search_tree<int, std::string>(key_comparer(), al.get(), logger.get());
 
     bst->emplace(5, "a");
     bst->emplace(2, "b");

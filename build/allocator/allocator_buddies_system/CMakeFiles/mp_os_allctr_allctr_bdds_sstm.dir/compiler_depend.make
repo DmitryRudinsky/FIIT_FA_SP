@@ -697,7 +697,6 @@ allocator/allocator_buddies_system/CMakeFiles/mp_os_allctr_allctr_bdds_sstm.dir/
   /Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/allocator/allocator/include/allocator_with_fit_mode.h \
   /Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/allocator/allocator/include/pp_allocator.h \
   /Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/allocator/allocator_buddies_system/include/allocator_buddies_system.h \
-  /Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/common/include/not_implemented.h \
   /Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/common/include/typename_holder.h \
   /Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/logger/logger/include/logger.h \
   /Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/logger/logger/include/logger_guardant.h
@@ -1220,8 +1219,6 @@ allocator/allocator_buddies_system/CMakeFiles/mp_os_allctr_allctr_bdds_sstm.dir/
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/once_flag.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h:
-
-/Users/gula-dmitrii/CLionProjects/FIIT_FA_SP/common/include/not_implemented.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rune_t.h:
 

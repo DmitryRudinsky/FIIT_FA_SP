@@ -765,7 +765,7 @@ namespace __detail
                 current->recalculate_height();
                 short balance = current->get_balance();
 
-                node_type *&subtree_ref = (current->parent == nullptr)
+                node_type *subtree_ref = (current->parent == nullptr)
                                           ? cont._root
                                           : (current->parent->left_subtree == current
                                              ? current->parent->left_subtree

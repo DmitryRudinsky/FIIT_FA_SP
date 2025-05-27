@@ -92,8 +92,8 @@ bool infix_const_iterator_test(
     B_tree<tkey, tvalue, comp, t> const &tree,
     std::vector<test_data<tkey, tvalue>> const &expected_result)
 {
-    auto end_infix = tree.cend();
-    auto it = tree.cbegin();
+auto end_infix = tree.end();
+auto it = tree.begin();
 
     for (auto const &item: expected_result)
     {
@@ -117,16 +117,20 @@ TEST(bTreePositiveTests, test0)
         { "b_tree_tests_logs.txt", logger::severity::trace }
     }));
 
+
     logger->trace("bTreePositiveTests.test0 started");
+
 
     std::vector<test_data<int, std::string>> expected_result =
     {
 
     };
 
+
     B_tree<int, std::string, std::less<int>, 1024> tree(std::less<int>(), nullptr, logger.get());
 
     EXPECT_TRUE(infix_const_iterator_test(tree, expected_result));
+
 
     logger->trace("bTreePositiveTests.test0 finished");
 }
@@ -398,16 +402,16 @@ TEST(bTreePositiveTests, test7)
     logger->trace("bTreePositiveTests.test7 started");
 
     std::vector<std::string> expected_result =
-    {
-        "g",
-        "d",
-        "e",
-        " ",
-        "l",
-        "a",
-        "b",
-        "y"
-    };
+            {
+                    "g",
+                    "d",
+                    "e",
+                    " ",
+                    "l",
+                    "a",
+                    "b",
+                    "y"
+            };
 
     B_tree<int, std::string, std::less<int>, 5> tree(std::less<int>(), nullptr, logger.get());
 
@@ -505,17 +509,28 @@ TEST(bTreePositiveTests, test9)
 
     logger->trace("bTreePositiveTests.test9 started");
 
+    printf("11111\n");
     std::vector<B_tree<int, std::string>::value_type> expected_result =
-    {
-        { 4, "e" },
-        { 15, "c" },
-        { 24, "g" },
-        { 45, "k" },
-        { 100, "f" },
-        { 101, "j" },
-    };
+            {
+                    {1, "a"},
+                    {2, "b"},
+                    {3, "d"},
+                    {4, "e"},
+                    {15, "c"},
+                    {24, "g"},
+                    {45, "k"},
+                    {100, "f"},
+                    {101, "j"},
+                    {193, "l"},
+                    {456, "h"},
+                    {534, "m"},
+            };
+    printf("22222\n");
+
 
     B_tree<int, std::string, std::less<int>, 5> tree(std::less<int>(), nullptr, logger.get());
+    printf("33333\n");
+
 
     tree.emplace(1, std::string("a"));
     tree.emplace(2, std::string("b"));
@@ -529,14 +544,24 @@ TEST(bTreePositiveTests, test9)
     tree.emplace(45, std::string("k"));
     tree.emplace(193, std::string("l"));
     tree.emplace(534, std::string("m"));
+    printf("44444\n");
+
 
     auto b = tree.begin();
+    printf("55555\n");
+
     auto e = tree.end();
+    printf("66666\n");
+
     std::vector<decltype(tree)::value_type> actual_result(b, e);
 
     EXPECT_TRUE(compare_obtain_results(expected_result, actual_result));
+    printf("77777\n");
+
 
     logger->trace("bTreePositiveTests.test9 finished");
+    printf("88888\n");
+
 }
 
 TEST(bTreeNegativeTests, test1)

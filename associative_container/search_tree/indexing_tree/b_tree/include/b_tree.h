@@ -507,8 +507,9 @@ B_tree<tkey, tvalue, compare, t>::btree_iterator::operator++() {
     btree_node* node = *node_ptr;
 
     if (!node->_pointers.empty()) {
-        _path.top().second = _path.top().second + 1;
-        _path.push({ &node->_pointers[_index + 1], 0 });
+        ++pointer_idx;
+        assert(pointer_idx < node->_pointers.size());
+        _path.push({ &node->_pointers[pointer_idx], 0 });
         node = *(_path.top().first);
         while (!node->_pointers.empty()) {
             _path.push({ &node->_pointers[0], 0 });
@@ -671,8 +672,10 @@ B_tree<tkey, tvalue, compare, t>::btree_const_iterator::operator++() {
     btree_node* node = *node_ptr;
 
     if (!node->_pointers.empty()) {
-        _path.top().second = _path.top().second + 1;
-        _path.push({ &node->_pointers[_index + 1], 0 });
+        ++pointer_idx;
+        assert(pointer_idx < node->_pointers.size());
+        _path.push({ &node->_pointers[pointer_idx], 0 });
+
         node = *(_path.top().first);
         while (!node->_pointers.empty()) {
             _path.push({ &node->_pointers[0], 0 });
@@ -1023,12 +1026,12 @@ typename B_tree<tkey, tvalue, compare, t>::btree_iterator B_tree<tkey, tvalue, c
         return end();
     }
     std::stack<std::pair<btree_node**, size_t>> path;
-    btree_node* current = _root;
-    while (!current->_pointers.empty()) {
-        path.push(std::make_pair(&current, 0));
-        current = current->_pointers[0];
+    btree_node** node_ptr = &_root;
+    while (!(*node_ptr)->_pointers.empty()) {
+        path.push({ node_ptr, 0 });
+        node_ptr = &((*node_ptr)->_pointers[0]);
     }
-    path.push(std::make_pair(&current, 0));
+    path.push({ node_ptr, 0 });
     return btree_iterator(path, 0);
 }
 
@@ -1140,14 +1143,12 @@ typename B_tree<tkey, tvalue, compare, t>::btree_iterator B_tree<tkey, tvalue, c
     if (!_root)
         return end();
 
-    // будем хранить в path «настоящие» адреса указателей на узлы
     std::stack<std::pair<btree_node**, size_t>> path;
     btree_node** ptr = &_root;
     btree_node* node = *ptr;
 
     while (true) {
         size_t lo = 0, hi = node->_keys.size();
-        // стандартный двоичный поиск позиции
         while (lo < hi) {
             size_t mid = (lo + hi) / 2;
             if (compare_keys(node->_keys[mid].first, key))
@@ -1155,18 +1156,15 @@ typename B_tree<tkey, tvalue, compare, t>::btree_iterator B_tree<tkey, tvalue, c
             else
                 hi = mid;
         }
-        // если нашли точное совпадение
         if (lo < node->_keys.size()
             && !compare_keys(key, node->_keys[lo].first)
             && !compare_keys(node->_keys[lo].first, key)) {
             path.emplace(ptr, lo);
             return btree_iterator(path, lo);
         }
-        // если дальше спускаемcя в потомков
         if (node->_pointers.empty())
             break;
 
-        // запоминаем текущую позицию и «перенаправляем» ptr
         path.emplace(ptr, lo);
         ptr = &node->_pointers[lo];
         node = *ptr;

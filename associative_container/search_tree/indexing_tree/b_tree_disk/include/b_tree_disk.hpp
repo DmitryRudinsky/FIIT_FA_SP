@@ -47,7 +47,7 @@ private:
 
 public:
     struct btree_disk_node {
-        size_t size;// кол-во заполненных ячеек
+        size_t size;
         bool _is_leaf;
         size_t position_in_disk;
         std::vector<tree_data_type> keys;
@@ -260,18 +260,15 @@ void B_tree_disk<tkey, tvalue, compare, t>::rebalance_node(std::stack<std::pair<
     if (node._is_leaf && node.size >= min_keys) return;
     if (!node._is_leaf && node.size >= min_keys) return;
 
-    if (path.empty()) return;// root case handled separately
+    if (path.empty()) return;
 
-    // Parent info
     auto [parent_pos, parent_index] = path.top();
     auto parent = disk_read(parent_pos);
 
-    // Try borrow from left sibling
     if (parent_index > 0) {
         size_t left_pos = parent.pointers[parent_index - 1];
         auto left = disk_read(left_pos);
         if (left.size > min_keys) {
-            // Shift keys right in node
             node.keys.insert(node.keys.begin(), parent.keys[parent_index - 1]);
             if (!node._is_leaf) node.pointers.insert(node.pointers.begin(), left.pointers.back());
 
@@ -286,7 +283,6 @@ void B_tree_disk<tkey, tvalue, compare, t>::rebalance_node(std::stack<std::pair<
             return;
         }
     }
-    // Try borrow from right sibling
     if (parent_index < parent.pointers.size() - 1) {
         size_t right_pos = parent.pointers[parent_index + 1];
         auto right = disk_read(right_pos);
@@ -305,13 +301,10 @@ void B_tree_disk<tkey, tvalue, compare, t>::rebalance_node(std::stack<std::pair<
             return;
         }
     }
-    // Merge with sibling (no borrow)
     if (parent_index > 0) {
-        // merge with left
         size_t left_pos = parent.pointers[parent_index - 1];
         auto left = disk_read(left_pos);
 
-        // bring down parent key
         left.keys.push_back(parent.keys[parent_index - 1]);
         for (auto& k: node.keys) left.keys.push_back(k);
         if (!node._is_leaf) {
@@ -494,13 +487,10 @@ std::pair<size_t, bool> B_tree_disk<tkey, tvalue, compare, t>::find_index(const 
 
 template<serializable tkey, serializable tvalue, compator<tkey> compare, std::size_t t>
 void B_tree_disk<tkey, tvalue, compare, t>::btree_disk_node::serialize(std::fstream& stream, std::fstream& stream_for_data) const {
-    // Serialize node header
     stream.write(reinterpret_cast<const char*>(&size), sizeof(size));
     stream.write(reinterpret_cast<const char*>(&_is_leaf), sizeof(_is_leaf));
     stream.write(reinterpret_cast<const char*>(&position_in_disk), sizeof(position_in_disk));
 
-    // Serialize keys and values
-    // First write count
     size_t key_count = keys.size();
     stream.write(reinterpret_cast<const char*>(&key_count), sizeof(key_count));
     for (const auto& kv: keys) {
@@ -511,7 +501,6 @@ void B_tree_disk<tkey, tvalue, compare, t>::btree_disk_node::serialize(std::fstr
         stream.write(reinterpret_cast<const char*>(&offset), sizeof(offset));
     }
 
-    // Serialize child pointers
     size_t ptr_count = pointers.size();
     stream.write(reinterpret_cast<const char*>(&ptr_count), sizeof(ptr_count));
     for (size_t ptr: pointers) {
@@ -533,7 +522,6 @@ typename B_tree_disk<tkey, tvalue, compare, t>::btree_disk_node B_tree_disk<tkey
     stream.read(reinterpret_cast<char*>(&node._is_leaf), sizeof(node._is_leaf));
     stream.read(reinterpret_cast<char*>(&node.position_in_disk), sizeof(node.position_in_disk));
 
-    // Read keys and their offsets
     size_t key_count;
     stream.read(reinterpret_cast<char*>(&key_count), sizeof(key_count));
     node.keys.clear();
@@ -546,7 +534,6 @@ typename B_tree_disk<tkey, tvalue, compare, t>::btree_disk_node B_tree_disk<tkey
         node.keys.emplace_back(std::move(k), std::move(v));
     }
 
-    // Read child pointers
     size_t ptr_count;
     stream.read(reinterpret_cast<char*>(&ptr_count), sizeof(ptr_count));
     node.pointers.clear();
